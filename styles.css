@@ -518,6 +518,55 @@ body {
 }
 
 /* ===================================
+   About Mobile Section (Hidden on Desktop)
+   =================================== */
+.about-mobile {
+    display: none;
+}
+
+.about-mobile-content {
+    background-color: var(--bg-primary);
+    border: 1px solid var(--border-color);
+    border-radius: 16px;
+    padding: 28px;
+}
+
+.about-mobile-content p {
+    color: var(--text-secondary);
+    line-height: 1.7;
+    margin-bottom: 24px;
+}
+
+.about-mobile-content p strong {
+    color: var(--accent);
+    font-weight: 600;
+}
+
+.about-mobile-stats {
+    display: flex;
+    justify-content: space-around;
+    gap: 20px;
+}
+
+.about-mobile-stats .stat {
+    text-align: center;
+}
+
+.about-mobile-stats .stat-number {
+    display: block;
+    font-size: 1.8rem;
+    font-weight: 700;
+    color: var(--accent);
+}
+
+.about-mobile-stats .stat-label {
+    font-size: 0.85rem;
+    color: var(--text-secondary);
+    text-transform: uppercase;
+    letter-spacing: 1px;
+}
+
+/* ===================================
    Experience Section - Timeline
    =================================== */
 .timeline {
@@ -1272,8 +1321,21 @@ body {
         display: flex;
     }
 
+    .hero-greeting {
+        min-height: 120px;
+        font-size: 1.1rem;
+    }
+
     .hero-title {
         font-size: clamp(2.5rem, 10vw, 4rem);
+    }
+
+    .hero-description {
+        display: none;
+    }
+
+    .hero-stats {
+        display: none;
     }
 
     .hero-subtitle {
@@ -1289,6 +1351,10 @@ body {
         width: 100%;
         max-width: 280px;
         justify-content: center;
+    }
+
+    .about-mobile {
+        display: block;
     }
 
     .about-stats {
@@ -1311,12 +1377,29 @@ body {
         left: 1px;
     }
 
+    .timeline-logo {
+        padding: 6px;
+        top: 15px;
+        right: 15px;
+    }
+
+    .timeline-logo img {
+        max-height: 30px;
+        max-width: 80px;
+    }
+
     .projects-grid {
         grid-template-columns: 1fr;
     }
 
     .education-header {
         flex-direction: column;
+    }
+
+    .education-icon {
+        width: 70px;
+        height: 70px;
+        padding: 8px;
     }
 
     .gpa-badge {
