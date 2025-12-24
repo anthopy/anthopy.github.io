@@ -1321,13 +1321,19 @@ body {
         display: flex;
     }
 
+    .hero {
+        padding: calc(var(--nav-height) + 30px) 24px 60px;
+    }
+
     .hero-greeting {
         min-height: 120px;
         font-size: 1.1rem;
+        margin-bottom: 8px;
     }
 
     .hero-title {
         font-size: clamp(2.5rem, 10vw, 4rem);
+        margin-bottom: 12px;
     }
 
     .hero-description {
