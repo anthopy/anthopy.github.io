@@ -1,0 +1,535 @@
+<!DOCTYPE html>
+<html lang="fr" data-theme="light">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Anthony Miceli | Data Scientist</title>
+    <meta name="description" content="Anthony Miceli - Data Science & Finance student at Polytechnique Montréal seeking a Data Science internship starting May 2026">
+    
+    <!-- Favicon -->
+    <link rel="apple-touch-icon" sizes="180x180" href="favicon_io/apple-touch-icon.png">
+    <link rel="icon" type="image/png" sizes="32x32" href="favicon_io/favicon-32x32.png">
+    <link rel="icon" type="image/png" sizes="16x16" href="favicon_io/favicon-16x16.png">
+    <link rel="manifest" href="favicon_io/site.webmanifest">
+    <link rel="shortcut icon" href="favicon_io/favicon.ico">
+    
+    <link rel="stylesheet" href="styles.css">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600;700&family=JetBrains+Mono:wght@400;500&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.1/css/all.min.css">
+</head>
+<body>
+    <!-- Navigation -->
+    <nav class="navbar" id="navbar">
+        <div class="nav-container">
+            <a href="#hero" class="nav-logo">
+                <img src="favicon_io/favicon-32x32.png" alt="AM" class="nav-logo-img">
+            </a>
+            <div class="nav-menu" id="nav-menu">
+                <a href="#about" class="nav-link" data-fr="À propos" data-en="About">À propos</a>
+                <a href="#experience" class="nav-link" data-fr="Expérience" data-en="Experience">Expérience</a>
+                <a href="#hackathons" class="nav-link" data-fr="Projets" data-en="Projects">Projets</a>
+                <a href="#skills" class="nav-link" data-fr="Compétences" data-en="Skills">Compétences</a>
+                <a href="#education" class="nav-link" data-fr="Formation" data-en="Education">Formation</a>
+                <a href="#contact" class="nav-link" data-fr="Contact" data-en="Contact">Contact</a>
+            </div>
+            <div class="nav-toggles">
+                <button class="toggle-btn lang-toggle" id="lang-toggle" aria-label="Toggle language">
+                    <span class="lang-text">EN</span>
+                </button>
+                <button class="toggle-btn theme-toggle" id="theme-toggle" aria-label="Toggle theme">
+                    <i class="fas fa-moon" id="theme-icon"></i>
+                </button>
+                <button class="hamburger" id="hamburger" aria-label="Menu">
+                    <span></span>
+                    <span></span>
+                    <span></span>
+                </button>
+            </div>
+        </div>
+    </nav>
+
+    <!-- Hero Section -->
+    <section class="hero" id="hero">
+        <div class="hero-content">
+            <p class="hero-greeting">
+                <span class="typing-wrapper"><span class="typing-text" id="typing-text"></span><span class="cursor" id="cursor">|</span></span>
+            </p>
+            <h1 class="hero-title">Data Scientist</h1>
+            <p class="hero-subtitle" data-fr="Actuellement à la recherche d'un stage en Data Science à partir de mai 2026" data-en="Currently seeking a Data Science internship starting May 2026">
+                Actuellement à la recherche d'un stage en Data Science à partir de mai 2026
+            </p>
+            <div class="hero-buttons">
+                <button class="btn btn-primary" id="cv-btn" data-fr="Télécharger CV" data-en="Download CV">
+                    <i class="fas fa-download"></i>
+                    <span>Télécharger CV</span>
+                </button>
+                <a href="#hackathons" class="btn btn-secondary" data-fr="Hackathons & Prix" data-en="Hackathons & Awards">
+                    <i class="fas fa-trophy"></i>
+                    <span>Hackathons & Prix</span>
+                </a>
+                <a href="#contact" class="btn btn-outline" data-fr="Me contacter" data-en="Contact me">
+                    <i class="fas fa-envelope"></i>
+                    <span>Me contacter</span>
+                </a>
+            </div>
+        </div>
+        <div class="scroll-indicator">
+            <div class="mouse">
+                <div class="wheel"></div>
+            </div>
+        </div>
+    </section>
+
+    <!-- About Section -->
+    <section class="section about" id="about">
+        <div class="container">
+            <h2 class="section-title" data-fr="À propos" data-en="About">À propos</h2>
+            <div class="about-content fade-in">
+                <div class="about-text">
+                    <p data-fr="Étudiant en <strong>Science des données et Finance</strong> à Polytechnique Montréal dans le cadre d'un double diplôme avec l'IMT Nord Europe. Passionné par l'intelligence artificielle et l'analyse de données, je mets mes compétences au service de défis complexes avec persévérance et adaptabilité." data-en="<strong>Data Science & Finance</strong> student at Polytechnique Montréal pursuing a dual degree with IMT Nord Europe. Passionate about artificial intelligence and data analysis, I leverage my skills to solve complex challenges with perseverance and adaptability.">
+                        Étudiant en <strong>Science des données et Finance</strong> à Polytechnique Montréal dans le cadre d'un double diplôme avec l'IMT Nord Europe. Passionné par l'intelligence artificielle et l'analyse de données, je mets mes compétences au service de défis complexes avec persévérance et adaptabilité.
+                    </p>
+                    <div class="about-stats">
+                        <div class="stat">
+                            <span class="stat-number">4.0</span>
+                            <span class="stat-label">GPA</span>
+                        </div>
+                        <div class="stat">
+                            <span class="stat-number">5+</span>
+                            <span class="stat-label" data-fr="Hackathons" data-en="Hackathons">Hackathons</span>
+                        </div>
+                        <div class="stat">
+                            <span class="stat-number">4</span>
+                            <span class="stat-label" data-fr="Langues" data-en="Languages">Langues</span>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Experience Section -->
+    <section class="section experience" id="experience">
+        <div class="container">
+            <h2 class="section-title" data-fr="Expérience" data-en="Experience">Expérience</h2>
+            <div class="timeline">
+                <div class="timeline-item fade-in">
+                    <div class="timeline-marker"></div>
+                    <div class="timeline-content">
+                        <div class="timeline-logo light-only">
+                            <img src="images/logo_pf_little.png" alt="PolyFinances">
+                        </div>
+                        <div class="timeline-header">
+                            <h3>PolyFinances</h3>
+                            <span class="timeline-role" data-fr="Conseiller logiciel" data-en="Software Advisor">Conseiller logiciel</span>
+                        </div>
+                        <div class="timeline-meta">
+                            <span class="timeline-date"><i class="far fa-calendar"></i> Mai 2025 – Mai 2026</span>
+                            <span class="timeline-location"><i class="fas fa-map-marker-alt"></i> Montréal, Canada</span>
+                        </div>
+                        <ul class="timeline-details">
+                            <li data-fr="Gestion et optimisation d'applications internes, notamment un outil de gestion de portefeuille supervisant plus de <strong>120 000 $ d'actifs</strong>" data-en="Management and optimization of internal applications, including a portfolio management tool overseeing over <strong>$120,000 in assets</strong>">
+                                Gestion et optimisation d'applications internes, notamment un outil de gestion de portefeuille supervisant plus de <strong>120 000 $ d'actifs</strong>
+                            </li>
+                            <li data-fr="Développement d'outils basés sur l'<strong>intelligence artificielle</strong> pour accompagner les décisions de gestion du fonds d'investissement" data-en="Development of <strong>AI-based tools</strong> to support investment fund management decisions">
+                                Développement d'outils basés sur l'<strong>intelligence artificielle</strong> pour accompagner les décisions de gestion du fonds d'investissement
+                            </li>
+                            <li data-fr="Organisation du <strong>Datathon annuel</strong> interuniversitaire réunissant plus de <strong>200 étudiants</strong>" data-en="Organization of the annual inter-university <strong>Datathon</strong> bringing together over <strong>200 students</strong>">
+                                Organisation du <strong>Datathon annuel</strong> interuniversitaire réunissant plus de <strong>200 étudiants</strong>
+                            </li>
+                        </ul>
+                    </div>
+                </div>
+
+                <div class="timeline-item fade-in">
+                    <div class="timeline-marker"></div>
+                    <div class="timeline-content">
+                        <div class="timeline-logo light-only">
+                            <img src="images/cegelec.png" alt="Cegelec Space">
+                        </div>
+                        <div class="timeline-header">
+                            <h3>Cegelec Space</h3>
+                            <span class="timeline-role">Data Analyst</span>
+                        </div>
+                        <div class="timeline-meta">
+                            <span class="timeline-date"><i class="far fa-calendar"></i> Avr 2024 – Sept 2024</span>
+                            <span class="timeline-location"><i class="fas fa-map-marker-alt"></i> Kourou, Guyane française</span>
+                        </div>
+                        <ul class="timeline-details">
+                            <li data-fr="Automatisation des rapports quadrimestriels pour le <strong>CNES</strong> et <strong>Arianespace</strong>, réduisant de <strong>50%</strong> le temps de traitement" data-en="Automation of quarterly reports for <strong>CNES</strong> and <strong>Arianespace</strong>, reducing processing time by <strong>50%</strong>">
+                                Automatisation des rapports quadrimestriels pour le <strong>CNES</strong> et <strong>Arianespace</strong>, réduisant de <strong>50%</strong> le temps de traitement
+                            </li>
+                            <li data-fr="Création d'un <strong>tableau de bord Power BI</strong> pour le suivi de <strong>plus de 180 projets par an</strong>" data-en="Creation of a <strong>Power BI dashboard</strong> for tracking <strong>over 180 projects per year</strong>">
+                                Création d'un <strong>tableau de bord Power BI</strong> pour le suivi de <strong>plus de 180 projets par an</strong>
+                            </li>
+                            <li data-fr="Optimisation du processus de mise à jour avec un <strong>outil Excel interactif</strong> (VBA)" data-en="Process optimization with an <strong>interactive Excel tool</strong> (VBA)">
+                                Optimisation du processus de mise à jour avec un <strong>outil Excel interactif</strong> (VBA)
+                            </li>
+                        </ul>
+                    </div>
+                </div>
+
+                <div class="timeline-item fade-in">
+                    <div class="timeline-marker"></div>
+                    <div class="timeline-content">
+                        <div class="timeline-logo light-only">
+                            <img src="images/arianespace.png" alt="Arianespace">
+                        </div>
+                        <div class="timeline-header">
+                            <h3>Arianespace</h3>
+                            <span class="timeline-role" data-fr="Stagiaire Data Analyst" data-en="Data Analyst Intern">Stagiaire Data Analyst</span>
+                        </div>
+                        <div class="timeline-meta">
+                            <span class="timeline-date"><i class="far fa-calendar"></i> Mars 2023 – Sept 2023</span>
+                            <span class="timeline-location"><i class="fas fa-map-marker-alt"></i> Kourou, Guyane française</span>
+                        </div>
+                        <ul class="timeline-details">
+                            <li data-fr="Automatisation des <strong>rapports trimestriels</strong> pour le CNES et Arianespace via VBA" data-en="Automation of <strong>quarterly reports</strong> for CNES and Arianespace using VBA">
+                                Automatisation des <strong>rapports trimestriels</strong> pour le CNES et Arianespace via VBA
+                            </li>
+                            <li data-fr="Conception d'un <strong>tableau de bord Power BI</strong> connecté à une base Access protégée" data-en="Design of a <strong>Power BI dashboard</strong> connected to a protected Access database">
+                                Conception d'un <strong>tableau de bord Power BI</strong> connecté à une base Access protégée
+                            </li>
+                            <li data-fr="Développement d'un <strong>outil Excel interactif</strong> améliorant la traçabilité des données" data-en="Development of an <strong>interactive Excel tool</strong> improving data traceability">
+                                Développement d'un <strong>outil Excel interactif</strong> améliorant la traçabilité des données
+                            </li>
+                        </ul>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Hackathons & Awards Section -->
+    <section class="section hackathons" id="hackathons">
+        <div class="container">
+            <h2 class="section-title" data-fr="Projets & Récompenses" data-en="Projects & Awards">Projets & Récompenses</h2>
+            <div class="projects-grid">
+                <div class="project-card fade-in">
+                    <div class="project-badge gold">
+                        <i class="fas fa-award"></i>
+                        <span>Best Use of AI</span>
+                    </div>
+                    <h3>UdeM Hacks</h3>
+                    <p data-fr="Application de nutrition intelligente utilisant un modèle YOLOv11 fine-tuné pour scanner les ingrédients et proposer des recettes classées par Nutri-Score. Coach santé personnalisé avec chatbot connecté à l'API Garmin." data-en="Smart nutrition app using a fine-tuned YOLOv11 model to scan ingredients and suggest recipes ranked by Nutri-Score. Personalized health coach with Garmin API-connected chatbot.">
+                        Application de nutrition intelligente utilisant un modèle YOLOv11 fine-tuné pour scanner les ingrédients et proposer des recettes classées par Nutri-Score. Coach santé personnalisé avec chatbot connecté à l'API Garmin.
+                    </p>
+                    <div class="project-tech">
+                        <span class="tech-tag">YOLOv11</span>
+                        <span class="tech-tag">Streamlit</span>
+                        <span class="tech-tag">SQLite</span>
+                        <span class="tech-tag">Garmin API</span>
+                    </div>
+                </div>
+
+                <div class="project-card fade-in">
+                    <div class="project-badge gold">
+                        <i class="fas fa-trophy"></i>
+                        <span data-fr="1ère place" data-en="1st Place">1ère place</span>
+                    </div>
+                    <h3>Datathon PolyFinances</h3>
+                    <p data-fr="Conception d'AlexIA, plateforme d'IA générative pour analystes financiers. Analyse de sentiment, résumé automatique, extraction de KPI. Présenté au siège de la CDPQ." data-en="Design of AlexIA, a generative AI platform for financial analysts. Sentiment analysis, automatic summarization, KPI extraction. Presented at CDPQ headquarters.">
+                        Conception d'AlexIA, plateforme d'IA générative pour analystes financiers. Analyse de sentiment, résumé automatique, extraction de KPI. Présenté au siège de la CDPQ.
+                    </p>
+                    <div class="project-tech">
+                        <span class="tech-tag">Gen AI</span>
+                        <span class="tech-tag">Yahoo Finance</span>
+                        <span class="tech-tag">StatCan</span>
+                        <span class="tech-tag">NLP</span>
+                    </div>
+                </div>
+
+                <div class="project-card fade-in">
+                    <div class="project-badge gold">
+                        <i class="fas fa-trophy"></i>
+                        <span data-fr="1ère place" data-en="1st Place">1ère place</span>
+                    </div>
+                    <h3>GreenHacksIT</h3>
+                    <p data-fr="Solution d'optimisation de la chaîne d'approvisionnement des boosters Ariane 6. Collaboration internationale et approche orientée innovation durable." data-en="Supply chain optimization solution for Ariane 6 boosters. International collaboration with sustainable innovation approach.">
+                        Solution d'optimisation de la chaîne d'approvisionnement des boosters Ariane 6. Collaboration internationale et approche orientée innovation durable.
+                    </p>
+                    <div class="project-tech">
+                        <span class="tech-tag">Optimization</span>
+                        <span class="tech-tag">Supply Chain</span>
+                        <span class="tech-tag">Sustainability</span>
+                    </div>
+                </div>
+
+                <div class="project-card fade-in">
+                    <div class="project-badge">
+                        <i class="fas fa-medal"></i>
+                        <span>Honorable Mention</span>
+                    </div>
+                    <h3>MAIS HACKS - WearSync</h3>
+                    <p data-fr="Application de recommandations vestimentaires personnalisées intégrant analyse d'images, météo et préférences utilisateur. Optimisation pour recommandations temps réel." data-en="Personalized clothing recommendation app integrating image analysis, weather, and user preferences. Optimized for real-time recommendations.">
+                        Application de recommandations vestimentaires personnalisées intégrant analyse d'images, météo et préférences utilisateur. Optimisation pour recommandations temps réel.
+                    </p>
+                    <div class="project-tech">
+                        <span class="tech-tag">Computer Vision</span>
+                        <span class="tech-tag">ML</span>
+                        <span class="tech-tag">API</span>
+                    </div>
+                </div>
+
+                <div class="project-card fade-in">
+                    <div class="project-badge">
+                        <i class="fas fa-code"></i>
+                        <span>POLYHX</span>
+                    </div>
+                    <h3>Blue Vision</h3>
+                    <p data-fr="Outil IA de détection et suivi de menaces marines (espèces invasives, menacées, déchets plastiques) via YOLOv5 et TrackerKCF. Visualisation des zones à risque." data-en="AI tool for marine threat detection and tracking (invasive species, endangered species, plastic waste) using YOLOv5 and TrackerKCF.">
+                        Outil IA de détection et suivi de menaces marines (espèces invasives, menacées, déchets plastiques) via YOLOv5 et TrackerKCF. Visualisation des zones à risque.
+                    </p>
+                    <div class="project-tech">
+                        <span class="tech-tag">YOLOv5</span>
+                        <span class="tech-tag">TrackerKCF</span>
+                        <span class="tech-tag">Computer Vision</span>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Skills Section -->
+    <section class="section skills" id="skills">
+        <div class="container">
+            <h2 class="section-title" data-fr="Compétences" data-en="Skills">Compétences</h2>
+            <div class="skills-grid">
+                <div class="skill-category fade-in">
+                    <h3><i class="fas fa-code"></i> <span data-fr="Langages" data-en="Languages">Langages</span></h3>
+                    <div class="skill-items">
+                        <div class="skill-item"><i class="fab fa-python"></i> Python</div>
+                        <div class="skill-item"><i class="fas fa-database"></i> SQL</div>
+                        <div class="skill-item"><i class="fab fa-java"></i> Java</div>
+                        <div class="skill-item"><i class="fas fa-chart-line"></i> R</div>
+                        <div class="skill-item"><i class="fab fa-js"></i> JavaScript</div>
+                        <div class="skill-item"><i class="fab fa-html5"></i> HTML/CSS</div>
+                        <div class="skill-item"><i class="fas fa-file-code"></i> LaTeX</div>
+                    </div>
+                </div>
+
+                <div class="skill-category fade-in">
+                    <h3><i class="fas fa-brain"></i> ML / AI</h3>
+                    <div class="skill-items">
+                        <div class="skill-item"><i class="fas fa-fire"></i> PyTorch</div>
+                        <div class="skill-item"><i class="fas fa-cogs"></i> TensorFlow</div>
+                        <div class="skill-item"><i class="fas fa-layer-group"></i> Keras</div>
+                        <div class="skill-item"><i class="fas fa-robot"></i> scikit-learn</div>
+                        <div class="skill-item"><i class="fas fa-calculator"></i> SciPy</div>
+                        <div class="skill-item"><i class="fas fa-table"></i> NumPy</div>
+                        <div class="skill-item"><i class="fas fa-table"></i> pandas</div>
+                    </div>
+                </div>
+
+                <div class="skill-category fade-in">
+                    <h3><i class="fas fa-chart-bar"></i> <span data-fr="Data & Visualisation" data-en="Data & Visualization">Data & Visualisation</span></h3>
+                    <div class="skill-items">
+                        <div class="skill-item"><i class="fas fa-chart-pie"></i> Power BI</div>
+                        <div class="skill-item"><i class="fas fa-chart-area"></i> Tableau</div>
+                        <div class="skill-item"><i class="fas fa-chart-line"></i> Matplotlib</div>
+                        <div class="skill-item"><i class="fas fa-chart-bar"></i> Seaborn</div>
+                        <div class="skill-item"><i class="fas fa-project-diagram"></i> Plotly</div>
+                    </div>
+                </div>
+
+                <div class="skill-category fade-in">
+                    <h3><i class="fas fa-cloud"></i> <span data-fr="Bases de données & Cloud" data-en="Databases & Cloud">Bases de données & Cloud</span></h3>
+                    <div class="skill-items">
+                        <div class="skill-item"><i class="fab fa-aws"></i> AWS</div>
+                        <div class="skill-item"><i class="fas fa-fire-alt"></i> Firebase</div>
+                        <div class="skill-item"><i class="fas fa-database"></i> PostgreSQL</div>
+                        <div class="skill-item"><i class="fas fa-database"></i> MySQL</div>
+                        <div class="skill-item"><i class="fas fa-database"></i> SQLite</div>
+                    </div>
+                </div>
+
+                <div class="skill-category fade-in">
+                    <h3><i class="fas fa-tools"></i> <span data-fr="Outils & Frameworks" data-en="Tools & Frameworks">Outils & Frameworks</span></h3>
+                    <div class="skill-items">
+                        <div class="skill-item"><i class="fab fa-git-alt"></i> Git</div>
+                        <div class="skill-item"><i class="fas fa-stream"></i> Streamlit</div>
+                        <div class="skill-item"><i class="fas fa-bolt"></i> FastAPI</div>
+                        <div class="skill-item"><i class="fas fa-mobile-alt"></i> Flutter</div>
+                        <div class="skill-item"><i class="fas fa-puzzle-piece"></i> MiniZinc</div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Education Section -->
+    <section class="section education" id="education">
+        <div class="container">
+            <h2 class="section-title" data-fr="Formation" data-en="Education">Formation</h2>
+            <div class="education-grid">
+                <div class="education-card fade-in">
+                    <div class="education-header">
+                        <div class="education-icon light-only">
+                            <img src="images/poly_blanc.png" alt="Polytechnique Montréal">
+                        </div>
+                        <div class="education-info">
+                            <h3>Polytechnique Montréal</h3>
+                            <span class="education-degree" data-fr="Double diplôme - Data Science & Finance" data-en="Dual Degree - Data Science & Finance">Double diplôme - Data Science & Finance</span>
+                            <div class="education-meta">
+                                <span><i class="far fa-calendar"></i> 2024 – 2026</span>
+                                <span><i class="fas fa-map-marker-alt"></i> Montréal, Canada</span>
+                            </div>
+                        </div>
+                        <div class="gpa-badge">
+                            <span class="gpa-value">4.0</span>
+                            <span class="gpa-label">GPA</span>
+                        </div>
+                    </div>
+                    <div class="education-courses">
+                        <h4 data-fr="Cours avancés" data-en="Advanced Courses">Cours avancés</h4>
+                        <div class="course-tags">
+                            <span class="course-tag">Machine Learning</span>
+                            <span class="course-tag">Reinforcement Learning</span>
+                            <span class="course-tag">Computer Vision</span>
+                            <span class="course-tag">NLP</span>
+                            <span class="course-tag">Data Mining</span>
+                            <span class="course-tag">Probabilistic AI</span>
+                            <span class="course-tag">Recommender Systems</span>
+                            <span class="course-tag">Data Visualization</span>
+                            <span class="course-tag">Financial Technologies</span>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="education-card fade-in">
+                    <div class="education-header">
+                        <div class="education-icon light-only">
+                            <img src="images/imt.png" alt="IMT Nord Europe">
+                        </div>
+                        <div class="education-info">
+                            <h3>IMT Nord Europe</h3>
+                            <span class="education-degree" data-fr="Cycle ingénieur - Spécialisation Informatique" data-en="Engineering Degree - Computer Science Specialization">Cycle ingénieur - Spécialisation Informatique</span>
+                            <div class="education-meta">
+                                <span><i class="far fa-calendar"></i> 2022 – 2024</span>
+                                <span><i class="fas fa-map-marker-alt"></i> Lille, France</span>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="education-card fade-in">
+                    <div class="education-header">
+                        <div class="education-icon light-only">
+                            <img src="images/stm.png" alt="Institution Sainte Marie d'Antony">
+                        </div>
+                        <div class="education-info">
+                            <h3 data-fr="Institution Sainte Marie d'Antony" data-en="Sainte Marie Institution">Classe Préparatoire (CPGE)</h3>
+                            <span class="education-degree" data-fr="Classes préparatoires aux grandes écoles (CPGE) : MPSI / PSI - Mathématiques, Physique, Sciences de l'Ingénieur" data-en="Preparatory Classes for Engineering Schools (CPGE): MPSI / PSI - Mathematics, Physics, Engineering Sciences">MPSI / PSI - Mathématiques, Physique, Sciences de l'Ingénieur</span>
+                            <div class="education-meta">
+                                <span><i class="far fa-calendar"></i> 2019 – 2022</span>
+                                <span><i class="fas fa-map-marker-alt"></i> Antony, France</span>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+
+            <div class="languages-section fade-in">
+                <h3 data-fr="Langues" data-en="Languages">Langues</h3>
+                <div class="languages-grid">
+                    <div class="language-item">
+                        <span class="language-name" data-fr="Français" data-en="French">Français</span>
+                        <span class="language-level" data-fr="Langue maternelle" data-en="Native">Langue maternelle</span>
+                    </div>
+                    <div class="language-item">
+                        <span class="language-name" data-fr="Anglais" data-en="English">Anglais</span>
+                        <span class="language-level">TOEIC 880</span>
+                    </div>
+                    <div class="language-item">
+                        <span class="language-name" data-fr="Espagnol" data-en="Spanish">Espagnol</span>
+                        <span class="language-level">DELE B1</span>
+                    </div>
+                    <div class="language-item">
+                        <span class="language-name" data-fr="Italien" data-en="Italian">Italien</span>
+                        <span class="language-level" data-fr="Intermédiaire" data-en="Intermediate">Intermédiaire</span>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Contact Section -->
+    <section class="section contact" id="contact">
+        <div class="container">
+            <h2 class="section-title" data-fr="Contact" data-en="Contact">Contact</h2>
+            <div class="contact-content">
+                <div class="contact-info fade-in">
+                    <h3 data-fr="Restons en contact" data-en="Let's Connect">Restons en contact</h3>
+                    <p data-fr="N'hésitez pas à me contacter pour discuter d'opportunités de stage ou de collaboration." data-en="Feel free to reach out to discuss internship opportunities or collaboration.">
+                        N'hésitez pas à me contacter pour discuter d'opportunités de stage ou de collaboration.
+                    </p>
+                    <div class="contact-links">
+                        <a href="https://www.linkedin.com/in/anthonymiceli/" target="_blank" rel="noopener" class="contact-link">
+                            <i class="fab fa-linkedin"></i>
+                            <span>LinkedIn</span>
+                        </a>
+                        <a href="mailto:miceli.anthony@outlook.fr" class="contact-link">
+                            <i class="fas fa-envelope"></i>
+                            <span>miceli.anthony@outlook.fr</span>
+                        </a>
+                    </div>
+                </div>
+                <form class="contact-form fade-in" id="contact-form">
+                    <div class="form-group">
+                        <label for="name" data-fr="Nom *" data-en="Name *">Nom *</label>
+                        <input type="text" id="name" name="name" required placeholder="Votre nom">
+                    </div>
+                    <div class="form-group">
+                        <label for="email">Email *</label>
+                        <input type="email" id="email" name="email" required placeholder="votre@email.com">
+                    </div>
+                    <div class="form-group">
+                        <label for="subject" data-fr="Sujet *" data-en="Subject *">Sujet *</label>
+                        <input type="text" id="subject" name="subject" required placeholder="Sujet de votre message">
+                    </div>
+                    <div class="form-group">
+                        <label for="message">Message *</label>
+                        <textarea id="message" name="message" rows="5" required placeholder="Votre message..."></textarea>
+                    </div>
+                    <button type="submit" class="btn btn-primary btn-full">
+                        <i class="fas fa-paper-plane"></i>
+                        <span data-fr="Envoyer le message" data-en="Send Message">Envoyer le message</span>
+                    </button>
+                </form>
+            </div>
+        </div>
+    </section>
+
+    <!-- CV Language Modal -->
+    <div class="modal-overlay" id="cv-modal">
+        <div class="modal">
+            <button class="modal-close" id="modal-close">
+                <i class="fas fa-times"></i>
+            </button>
+            <h3 data-fr="Choisir la langue du CV" data-en="Choose CV language">Choisir la langue du CV</h3>
+            <p data-fr="Sélectionnez la version que vous souhaitez télécharger" data-en="Select the version you want to download">Sélectionnez la version que vous souhaitez télécharger</p>
+            <div class="modal-buttons">
+                <a href="cv/CV_Miceli_Anthony_fr.pdf" download class="btn btn-primary">
+                    <i class="fas fa-download"></i>
+                    <span>Français</span>
+                </a>
+                <a href="cv/CV_Miceli_Anthony_eng.pdf" download class="btn btn-secondary">
+                    <i class="fas fa-download"></i>
+                    <span>English</span>
+                </a>
+            </div>
+        </div>
+    </div>
+
+    <!-- Footer -->
+    <footer class="footer">
+        <div class="container">
+            <p>© 2025 Anthony Miceli. <span data-fr="Tous droits réservés." data-en="All rights reserved.">Tous droits réservés.</span></p>
+        </div>
+    </footer>
+
+    <script src="script.js"></script>
+</body>
+</html>
