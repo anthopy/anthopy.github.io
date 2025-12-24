@@ -75,6 +75,14 @@ function setLanguage(lang) {
         }
     });
     
+    // Update course tooltips based on language
+    document.querySelectorAll('[data-tooltip-fr][data-tooltip-en]').forEach(el => {
+        const tooltip = el.getAttribute(`data-tooltip-${lang}`);
+        if (tooltip) {
+            el.setAttribute('data-tooltip', tooltip);
+        }
+    });
+    
     // Update form placeholders
     const placeholders = {
         fr: {
@@ -442,6 +450,14 @@ function initEventListeners() {
 document.addEventListener('DOMContentLoaded', () => {
     initEventListeners();
     startTypingAnimation();
+    
+    // Initialize course tooltips for default language (French)
+    document.querySelectorAll('[data-tooltip-fr][data-tooltip-en]').forEach(el => {
+        const tooltip = el.getAttribute('data-tooltip-fr');
+        if (tooltip) {
+            el.setAttribute('data-tooltip', tooltip);
+        }
+    });
     
     // Check system preference for theme
     if (!localStorage.getItem('theme')) {
